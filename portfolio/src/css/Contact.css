@@ -1,0 +1,49 @@
+@import 'variables.css';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.contact-details {
+    padding: 2rem;
+}
+
+.email-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contact-icon {
+    width: 1.5rem;
+}
+
+.location-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width : 44rem) {
+    .contact-wraper {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,56 @@
+@import './variables.css';
+
+
+.panel {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    background-color: var(--primary-color);
+
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.panel__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.panel__content {
+    padding: 2rem;
+}
+
+.panel__description {
+    margin-top: .5rem;
+}
+
+.download {
+    margin-top: 1rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.skills__content {
+    max-width: 44rem;
+    flex-grow: 1;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+@media (min-width : 44rem) {
+    .panel {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .panel__container {
+        flex-direction: row;
+    }
+}

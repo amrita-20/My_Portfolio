@@ -1,0 +1,124 @@
+@import 'variables.css';
+
+.cards-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    max-width: auto;
+}
+
+.card {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    background-color: var(--primary-color);
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem var(--secondary-color);
+
+    color: var(--text-primary);
+    max-width: 25rem;
+}
+
+.card__image {
+    overflow: hidden;
+    height: 100%;
+    flex: 1;
+}
+
+.card__content {
+    display: flex;
+    flex: 1.1;
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
+    margin-bottom: 1rem;
+    padding: .5rem;
+
+    text-align: center;
+}
+
+.card__title {
+    margin: 1rem 0 1rem 0;
+}
+
+.card__content span {
+    font-weight: 600;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.card__link {
+    display: inline-block;
+    margin-top: auto;
+    padding: .5rem;
+
+    border-radius: .5rem;
+
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card__link:hover {
+    background-color: var(--btn-hover);
+}
+
+.button-link {
+    border: none;
+    font-size: 1.2rem;
+    color: var(--btn-bg);
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.about-project {
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (min-width : 44rem) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 3rem;
+        max-width: 1200px;
+    }
+
+    .card {
+        grid-column: span 6;
+        flex-direction: row;
+        align-items: center;
+        max-width: 50rem;
+    }
+
+
+    .card__image {
+        flex: 1;
+    }
+
+    .card__image img {
+        width: auto;
+        height: 100%;
+    }
+
+    .card__content {
+        flex: 1.5;
+        height: 100%;
+    }
+}
