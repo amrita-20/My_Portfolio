@@ -1,6 +1,30 @@
 const experience = [
   {
     position: "left",
+    id: "gta",
+    date: "January 2024 - April 2024",
+    companyName: "Northeastern University",
+    designation: "Graduate Teaching Assistant",
+    work: [
+      {
+        id: "gtadesc1",
+        description:
+          "I play a key role in supporting students' learning experiences by providing constructive feedback on students' code to enhance their programming skills and ensure adherence to best practices.",
+      },
+      {
+        id: "gtadesc2",
+        description:
+          "Facilitate office hours to address students' queries, clarify concepts, present demos and guide them through challenging aspects of web development.",
+      },
+      {
+        id: "gtadesc3",
+        description:
+          "Manage the grading process for assignments and projects, ensuring fair and timely evaluation of students' work.",
+      },
+    ],
+  },
+  {
+    position: "right",
     id: "jpmc",
     date: "December 2020 - January 2023",
     companyName: "JP Morgan & Chase",
@@ -24,7 +48,7 @@ const experience = [
     ],
   },
   {
-    position: "right",
+    position: "left",
     id: "deloitte",
     date: "July 2018 - December 2020",
     companyName: "Deloitte",
@@ -48,7 +72,7 @@ const experience = [
     ],
   },
   {
-    position: "left",
+    position: "right",
     id: "infosys",
     date: "February 2015 - June 2018",
     companyName: "Infosys",

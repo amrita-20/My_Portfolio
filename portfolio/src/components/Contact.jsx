@@ -12,7 +12,8 @@ function Contact({ mainRef }) {
         <div className="contact-details">
           <div className="email-detail">
             <img className="contact-icon" src={emailSvg} alt="icon of email" />
-            <span className="text">dubey.am@northeastern.edu</span>
+            {/* <span className="text">dubey.am@northeastern.edu</span> */}
+            <a href="mailto: dubey.am@northeastern.edu">dubey.am@northeastern.edu</a>
           </div>
           <div className="location-detail">
             <img

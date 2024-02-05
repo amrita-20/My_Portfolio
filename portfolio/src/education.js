@@ -20,7 +20,7 @@ const education = [
       },
       {
         id: "msdesc4",
-        description: "Data Structure and Algorithm",
+        description: "Data Structure and Algorithm using Java",
       },
       {
         id: "msdesc5",
@@ -30,6 +30,18 @@ const education = [
         id: "msdesc6",
         description: "Web Design",
       },
+      {
+        id: "msdesc7",
+        description: "Database Management and Database Design",
+      },
+      {
+        id: "msdesc7",
+        description: "Data Management and Database Design",
+      },
+      {
+        id: "msdesc8",
+        description: "Advanced Techniques with Large Language Models"
+      }
     ],
   },
   {
@@ -45,7 +57,7 @@ const education = [
       },
       {
         id: "btechdesc2",
-        description: "OOPS using C++",
+        description: "Objrct Oriented Programming using C++",
       },
       {
         id: "btechdesc3",
@@ -58,6 +70,10 @@ const education = [
       {
         id: "btechdesc5",
         description: "Computer Organizatio and Architecture",
+      },
+      {
+        id: "btechdesc6",
+        description: "Programming using C",
       },
     ],
   },

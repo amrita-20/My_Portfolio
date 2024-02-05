@@ -1,7 +1,7 @@
 import Button from "./Button";
 import "./../css/Card.css";
 
-function Card({ title, pic, alt, onClick, linkText, description }) {
+function Card({ title, pic, alt, onClick, linkText,linkUrl, description, techDesc }) {
   return (
     <div className="card">
       <div className="card__image">
@@ -10,18 +10,17 @@ function Card({ title, pic, alt, onClick, linkText, description }) {
       <div className="card__content">
         <h1 className="card__title">{title}</h1>
         <p>{description}</p>
-        <p>
-          <span>Tech and Tools: </span>{" "}
-          <span>Java, NumPy, JavaFX, TensorFlow, MNIST, Maven</span>
+        <p
+         className="card__desc">{techDesc}
         </p>
-        <Button
+        {/* <Button
           type="button"
           visual="link"
           className="card__link"
-          onClick={(e) => onClick(e)}
+          onClick={() => onClick(linkUrl)}
         >
           {linkText}
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

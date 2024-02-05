@@ -2,8 +2,7 @@ const menu = [
   { name: "Home" },
   { name: "Experience" },
   { name: "Projects" },
-  { name: "Education" },
-  { name: "Contact" },
+  { name: "Education" }
 ];
 
 export default menu;

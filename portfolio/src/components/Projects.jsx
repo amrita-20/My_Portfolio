@@ -1,11 +1,11 @@
 import Card from "./Card";
 import projects from "../projects";
 
-function Projects({ setPage }) {
-  const viewProject = (e) => {
-    e.preventDefault();
-    setPage("About Project");
+function Projects() {
+  const viewProject = (url="/") => {
+    window.location.href= url;
   };
+
   const projectList = projects.map((projectDetail) => {
     return (
       <Card
@@ -15,6 +15,7 @@ function Projects({ setPage }) {
         description={projectDetail.description}
         onClick={viewProject}
         linkText={projectDetail.linkText}
+        linkUrl={projectDetail.linkUrl}
         techLable={projectDetail.techLabel}
         techDesc={projectDetail.techDesc}
         key={projectDetail.id}

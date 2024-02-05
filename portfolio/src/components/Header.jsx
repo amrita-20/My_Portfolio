@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logoImg from "./../assets/logo-img.jpeg";
+import icon from "./../assets/amrita-icon.jpg";
 import "./../css/Header.css";
 import GlobalNav from "./GlobalNav";
 import Overlay from "./Overlay";
@@ -31,9 +31,10 @@ function Header({ setPage, onThemeSelection }) {
       <header className="header">
         <img
           className="header__logo"
-          src={logoImg}
+          src={icon}
           alt="logo image of amrita"
         ></img>
+        
         <GlobalNav
           overlay={overlay}
           setOverlay={setOverlay}
