@@ -1,0 +1,22 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  height: 100%;
+  overflow: auto;
+}
+
+a {
+  color: var(--text-primary);
+}

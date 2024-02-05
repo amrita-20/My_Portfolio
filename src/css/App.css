@@ -1,0 +1,99 @@
+@import 'variables.css';
+
+#root {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow-y: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: .5rem;
+  background-color: var(--secondary-color);
+  z-index: 99;
+}
+
+.header__logo {
+  border-radius: 50%;
+}
+
+.main {
+  overflow-y: auto;
+}
+
+.main h1 {
+  font-size: 1.5rem;
+}
+
+.main h2 {
+  font-size: 1.3rem;
+}
+
+.button {
+  background-color: var(--btn-bg);
+  padding: .5rem;
+  border-radius: .5rem;
+  border: none;
+  
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.button:hover {
+  background-color: var(--btn-hover);
+}
+
+.text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+
+  padding: 1rem;
+  background-color: var(--secondary-color);
+
+  text-align: center;
+  font-size: .9rem;
+  z-index: 99;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  ;
+}
+
+@media (min-width : 44rem) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
